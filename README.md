@@ -84,7 +84,7 @@ const MyGallery = () => (
 ## Captions
 
 If you want to add captions to your slides, you need to pass `withCaption` prop to the `<Gallery />`
-and pass `caption` prop to each `<Item />`. It accepts html as well. If `caption` isn't provided - it will use `alt` prop.
+and pass `caption` prop to each `<Item />`. If `caption` isn't provided - it will use `alt` prop.
 
 ```javascript
 const MyGallery = () => (
@@ -376,7 +376,7 @@ const MyGallery = () => (
 | `uiElements` | Array | | Array of configuration objects for [custom UI elements](#custom-ui-elements). Use it for [adding custom UI elements](https://photoswipe.com/adding-ui-elements/) ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/rotate-slide-button.stories.tsx)) |
 | `onBeforeOpen` | Function | | Triggers before `PhotoSwipe.init()` call. Use it for accessing PhotoSwipe [API](https://photoswipe.com/methods/#photoswipe-core-methods). It will receive PhotoSwipe instance as the first argument: `(photoswipe: PhotoSwipe) => void` |
 | `onOpen` | Function | | Triggers after `PhotoSwipe.init()` call. Use it for accessing PhotoSwipe [API](https://photoswipe.com/methods/#photoswipe-core-methods). It will receive PhotoSwipe instance as the first argument: `(photoswipe: PhotoSwipe) => void` |
-| `withCaption` | Boolean | ✓ (for default captions) | Enables built-in [caption](#captions) display. Use the `caption` prop of the Item component to control caption text ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/with-default-caption.stories.tsx)) |
+| `withCaption` | Boolean | ✓ (for default captions) | Enables built-in [caption](#captions) display. Use the `caption` prop of the Item component to control caption text ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/with-caption.stories.tsx)) |
 | `withDownloadButton` | Boolean | ✓ (for download button) | Adds UI control for downloading the original image of the current slide ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/with-download-button.stories.tsx)) |
 | `dataSource` | Array | | Array of data for Photoswipe slides. [Data source](#data-source) - alternative way to pass data into Photoswipe |
 
@@ -395,7 +395,7 @@ const MyGallery = () => (
 | `width` | Number or String |  | Width of original image |
 | `height` | Number or String |  | Height of original image |
 | `alt` | String |  | Alternate text for original image |
-| `caption` | String |  | Text or html for caption ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/with-default-caption.stories.tsx)) |
+| `caption` | String |  | Text for caption ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/with-caption.stories.tsx)) |
 | `cropped` | Boolean |  | Thumbnail is cropped ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/cropped.stories.tsx)) |
 | `content` | ReactElement |  | [Custom slide content](#custom-slide-content) ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/custom-content.stories.tsx)) |
 | `html` | String |  | [Custom slide content](#custom-slide-content) (raw html) ([example](https://github.com/dromru/react-photoswipe-gallery/blob/master/src/storybook/custom-content.stories.tsx)) |
